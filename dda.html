@@ -36,20 +36,20 @@
       <a class="linkheader"  href="#">publicaties</a>
       <a class="linkheader"  href="#">leden</a>
       <a class="linkheader"  href="#">vacatures</a>
-      <a class="link-blauw" href="#">inloggen          
+      <a class="link-blauw link-arrow-blauw" href="#">inloggen          
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
-        <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+        <path d="M3 8L13 8" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
         </svg></a>
 
-      <button class="wordlid-button button">word lid           
+      <a href="#" class="wordlid-button button">word lid           
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path  d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
-        <path  d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+          <path  d="M8 3L13.0001 8.0001L8 13.0002" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+          <path  d="M3 8L13 8"  stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
         </svg>
-      </button>
+      </a>
 
-      <div><button aria-label="open menu" id="menubalk"> 
+      <div> <button aria-label="open menu" id="menubalk"> 
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" y="0.5" width="39" height="39" stroke="#222226"/>
           <mask id="mask0_5_18742" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="32" height="32">
@@ -68,7 +68,7 @@
 
       <!-- over dda -->
 
-     <a id="terug-home" href="#">
+     <a class="terug-home link-arrow" href="#">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 13L2.9999 7.9999L8 2.99979" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
         <path d="M13 8L3 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
@@ -84,14 +84,16 @@
 
    <img id="video" src="content/video.jpg" alt="video">
     <div class="video-overlay">
-      <button class="button button-bold">bekijk onze video
+      <button class="button-bold">bekijk onze video
        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
-        <path d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+        <path d="M3 8L13 8" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
         </svg>
       </button>
     </div>
    </div>
+    
+  <section class="informatie-responsive">
     
     <p id="text2">Dé branchevereniging voor digitale bureaus</p>
 
@@ -99,7 +101,7 @@
 
       <!-- informatie over DDA -->
 
-      <h2>Sinds 2002 verbindt DDA de meest toonaangevende digitale bureaus.</h2>
+      <h2 id="DDAH2">Sinds 2002 verbindt DDA de meest toonaangevende digitale bureaus.</h2>
        <p id="text3">We delen kennis en ervaringen, prikkelen met nieuwe ideeën en digitale toepassingen en laten zien wat we kunnen. 
         Samen versterken we onze snelgroeiende branche en ontwikkelen het talent van morgen. 
         We zijn trots op onze kennis en ons werk. En vertellen daar graag over op events en in de media.
@@ -110,14 +112,15 @@
        </p>
 
        <div class="button-leden">
-        <button class="button">bekijk onze leden
+        <a href="#" class="button">bekijk onze leden
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
           <path d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
           </svg>
-        </button>
+        </a>
        </div>
     </div> 
+  </section>
 
     <div class="logoscroller">
 
@@ -170,8 +173,8 @@
           <p class="infopersoon">CEO WeAreBrain, portefeuille PR & Communicatie</p>
 
           <div class="container-links-personen">
-           <a class="links-personen" href="https://www.linkedin.com/in/elvirejaspers/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin elvire"></a>
-           <a class="links-personen" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail elvire"></a>
+           <a class="links-personen link-arrow-blauw" href="https://www.linkedin.com/in/elvirejaspers/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin elvire"></a>
+           <a class="links-personen link-arrow-blauw" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail elvire"></a>
           </div>
         </div>
       </article>
@@ -185,8 +188,8 @@
           <p class="infopersoon">Bureaumanagement</p>
 
           <div class="container-links-personen">
-           <a class="links-personen" href="https://www.linkedin.com/in/karlijn-koekoek-858248b/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin karlijn"></a>
-           <a class="links-personen" href="mailto:karlijn@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="email karlijn"></a>
+           <a class="links-personen link-arrow-blauw" href="https://www.linkedin.com/in/karlijn-koekoek-858248b/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin karlijn"></a>
+           <a class="links-personen link-arrow-blauw" href="mailto:karlijn@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="email karlijn"></a>
           </div>
         </div>
       </article>
@@ -200,8 +203,8 @@
           <p class="infopersoon">Managing partner DotControl, Voorzitter & Belangenbehartiging</p>
           
           <div class="container-links-personen">
-           <a class="links-personen" href="https://www.linkedin.com/in/marklandman/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin mark"></a>
-           <a class="links-personen" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail mark"></a>
+           <a class="links-personen link-arrow-blauw" href="https://www.linkedin.com/in/marklandman/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin mark"></a>
+           <a class="links-personen link-arrow-blauw" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail mark"></a>
           </div>
         </div>
       </article>
@@ -215,8 +218,8 @@
           <p class="infopersoon">Partnership manager IO, Penningmeester</p>
 
           <div class="container-links-personen">
-           <a class="links-personen" href="https://www.linkedin.com/in/martijnvervoordeldonk/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin martijn"></a>
-           <a class="links-personen" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail martijn"></a>
+           <a class="links-personen link-arrow-blauw" href="https://www.linkedin.com/in/martijnvervoordeldonk/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin martijn"></a>
+           <a class="links-personen link-arrow-blauw" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail martijn"></a>
           </div>
         </div>
       </article>
@@ -230,8 +233,8 @@
           <p class="infopersoon">Managing Director Kaliber, portefeuille Events</p>
 
           <div class="container-links-personen">
-           <a class="links-personen" href="https://www.linkedin.com/in/nienkevanheusden/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin nienke"></a>
-           <a class="links-personen" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail nienke"></a>
+           <a class="links-personen link-arrow-blauw" href="https://www.linkedin.com/in/nienkevanheusden/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin nienke"></a>
+           <a class="links-personen link-arrow-blauw" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail nienke"></a>
           </div>
         </div>
       </article>
@@ -245,8 +248,8 @@
           <p class="infopersoon">Principal Service Design, Ordina Digital, portefeuille Kennis</p>
 
           <div class="container-links-personen">
-           <a class="links-personen" href="https://www.linkedin.com/in/pietera/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin pieter"></a>
-           <a class="links-personen" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail pieter"></a>
+           <a class="links-personen link-arrow-blauw" href="https://www.linkedin.com/in/pietera/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin pieter"></a>
+           <a class="links-personen link-arrow-blauw" href="mailto:info@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail pieter"></a>
           </div>
         </div>
       </article>
@@ -260,8 +263,8 @@
          <p class="infopersoon">Directeur</p>
 
           <div class="container-links-personen">
-           <a class="links-personen" href="https://www.linkedin.com/in/fenna-van-raaij-a4652733/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin fenna"></a>
-           <a class="links-personen" href="mailto:fenna@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail fenna"></a>
+           <a class="links-personen link-arrow-blauw" href="https://www.linkedin.com/in/fenna-van-raaij-a4652733/" target="_blank">Linkedin<img src="content/arrow-right-up.svg" alt="linkedin fenna"></a>
+           <a class="links-personen link-arrow-blauw" href="mailto:fenna@dutchdigitalagencies.com;" target="_blank">E-Mail<img src="content/arrow-right-up.svg" alt="mail fenna"></a>
           </div>
         </div>
       </article>
@@ -270,12 +273,11 @@
   
        <h3>We hebben nog een plekje vrij in de organisatie 
         (en onze OCD kan dit niet aan)!</h3>
-       <a href="#">solliciteer direct
+       <a class="link-arrow-blauw" href="#">solliciteer direct
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
-          <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+          <path d="M8 3L13.0001 8.0001L8 13.0002" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+          <path d="M3 8L13 8" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
           </svg></a>
-
         </div>
     </section>
 
@@ -284,12 +286,12 @@
       <!-- samenwerkingen -->
 
      <h2>Wij bedanken onze trouwe partners</h2>
-     <button class="button">word partner 
+     <a href="#" class="button">word partner 
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
-        <path d="M3 8L13 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+        <path d="M8 3L13.0001 8.0001L8 13.0002" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+        <path d="M3 8L13 8" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
       </svg>
-     </button>
+    </a>
     </section>
 
     <section class="partner-logos">
@@ -310,23 +312,23 @@
       <!-- links naar andere subpaginas en contact -->
 
         <img id="logo-dda-footer" src="content/dda-logo-white.svg" width="106.67" height="80" alt="logo dda">
-         <a id="inloggen" href="#">inloggen 
+         <a class="inloggen link-arrow-blauw" href="#">inloggen 
            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 3L13.0001 8.0001L8 13.0002" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023"/>
-            <path d="M3 8L13 8" stroke="#364BF7" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+            <path d="M8 3L13.0001 8.0001L8 13.0002" stroke-width="1.5" stroke-miterlimit="4.62023"/>
+            <path d="M3 8L13 8"  stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
            </svg>
          </a>
         </div>
  </main>
     <footer>
       <nav class="footer-linkjes black-box ">
-        <a href="#">Over ons</a>
-        <a href="#">Events</a>
-        <a href="#">Publicaties</a>
-        <a href="#">Leden</a>
-        <a href="#">Vacatures</a>
-        <a href="#">Algemene Voorwaarden</a>
-        <a href="#">Privacybeleid</a>
+        <a class="link-arrow" href="#">Over ons</a>
+        <a class="link-arrow" href="#">Events</a>
+        <a class="link-arrow" href="#">Publicaties</a>
+        <a class="link-arrow" href="#">Leden</a>
+        <a class="link-arrow" href="#">Vacatures</a>
+        <a class="link-arrow" href="#">Algemene Voorwaarden</a>
+        <a class="link-arrow" href="#">Privacybeleid</a>
       </nav>
 
      <section class="footer-info black-box">
@@ -334,16 +336,16 @@
         <p id="tekst-naam-dda">Dutch Digital Agencies</p>
         <p class="tekst-adres">Overhoeksplein 1</p>
         <p class="tekst-adres">1031ks Amsterdam</p>
-        <a id="telefoonnummer"href="#">0854010391</a>
-        <a id="emailbedrijf" href="mailto:info@dutchdigitalagencies.com">info@dutchdigitalagencies.com</a>
+        <a class="link-arrow" id="telefoonnummer"href="#">0854010391</a>
+        <a class="link-arrow" id="emailbedrijf" href="mailto:info@dutchdigitalagencies.com">info@dutchdigitalagencies.com</a>
      </section>
 
      <section class="footer-social black-box">
         
         <p>Copyright © 2023 Dutch Digital Agencies</p>
-        <a id="instagramfooter" href="https://www.instagram.com/dutchdigitalagencies/">Instagram</a>
-        <a id="facebookfooter" href="https://www.facebook.com/DutchDigitalAgencies/">Facebook</a>
-        <a id="linkedinfooter" href="https://nl.linkedin.com/company/dutch-digital-agencies">Linkedin</a>
+        <a class="link-arrow instagramfooter" href="https://www.instagram.com/dutchdigitalagencies/">Instagram</a>
+        <a class="link-arrow facebookfooter" href="https://www.facebook.com/DutchDigitalAgencies/">Facebook</a>
+        <a class="link-arrow linkedinfooter" href="https://nl.linkedin.com/company/dutch-digital-agencies">Linkedin</a>
      </section>
     </footer>
 </body>

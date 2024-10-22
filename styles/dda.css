@@ -20,35 +20,70 @@ h2 {
 a {
     text-decoration: none; }
 
+.link-arrow {
+
+    transition: ease-out 0.3s;
+
+    path {
+        stroke:#222226} }
+
+    .link-arrow:hover, .link-arrow:focus {
+        font-size: 18px;}
+
+.link-arrow-blauw {
+
+path {
+    stroke:#364BF7} }        
+
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    padding: 14px 16px 14px 16px;
+    padding: 10px 16px 10px 16px;
     font-family: "Martian Mono";
     text-transform: uppercase;
     gap: 12px;
     box-shadow: inset 0 0 0 0 white;
     transition: ease-out 0.3s;
+    color: black;
     background-color: white;
-    border: 2px solid black; }
+    border: 2px solid #222226;
 
-    .button:hover {
+    path {
+        stroke:#222226; } }
+
+    .button:hover,.button-bold:hover, .button:focus ,.button-bold:focus {
         color: white;
-        box-shadow: inset 300px 0 0 0 blue;
-        border: 2px solid blue; }
-
-    .stroke:hover {
-        color: #fff; }
-
+        box-shadow: inset 300px 0 0 0 #364BF7;
+        border: 2px solid #364BF7; 
+    
+        path {
+            stroke:white; } }
 
     .button-bold {
-        font-weight: 700; }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700; 
+        padding: 14px 16px 14px 16px;
+        font-family: "Martian Mono";
+        text-transform: uppercase;
+        gap: 12px;
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.3s;
+        color: black;
+        background-color: white;
+        border: 2px solid #222226;
+    
+        path {
+            stroke:#222226; } }
+
 
 .black-box {
-    border-top: 1px solid black;
+    border-top: 1px solid #222226;
     border-width: auto; }   
 
 
@@ -73,7 +108,7 @@ header {
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                color: blue;
+                color: #364BF7;
                 font-weight: bold; }
 
         #menubalk {
@@ -90,16 +125,16 @@ header {
         @media all and (min-width: 850px) { #menubalk {
             display:none; } }
 
-#logo {
-    width: 53.33px;
-    height: 40px; }
+    #logo {
+        width: 53.33px;
+        height: 40px; }
 
     @media all and (min-width: 850px) {#logo {
         width: 106.67px;
         height: 80px; } }
     
     
-#terug-home {
+.terug-home {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +177,8 @@ header {
     #video {
         height: 320px;
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        border: 2px solid #222226; }
 
         .video-overlay {
             position: absolute;
@@ -153,7 +189,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;}
-   
+
 
 #text2 {
     font-family: "Martian Mono" ;
@@ -161,8 +197,11 @@ header {
     letter-spacing: -4%;
     text-transform: uppercase;
     padding-left: 16px; 
+    padding-right: 16px;
     padding-top: 16px;}
 
+    @media all and (min-width: 800px) {#text2 { 
+        width: 528px; } }
 
 .informatie {
     padding-left: 16px;
@@ -172,7 +211,14 @@ header {
     font-size: 24px;
     font-weight: 400;
     padding-bottom: 62px;
-    padding-top: 92px; } }
+    padding-top: 92px; 
+    margin: 0px;} }
+
+    @media all and (min-width: 752px) {.informatie { 
+        width: 752px; } }
+
+    @media all and (min-width: 1050px) {#DDAH2, #text2 { 
+        padding-top: 48px; } }        
 
         .button-leden {
             display: flex;
@@ -183,6 +229,10 @@ header {
 
         #text3 {
             padding-bottom: 16px;  }
+
+@media all and (min-width: 1050px) {.informatie-responsive {
+    display:flex;  
+    flex-direction: row;      } }
 
 
 .logoscroller {
@@ -251,7 +301,7 @@ header {
             align-self: center;
             object-fit: cover; 
             object-position: top;
-            outline: 1px solid black;
+            outline: 1px solid #222226;
             outline-offset: -1px; 
             width: 272px;
             height: 272px} }
@@ -345,7 +395,7 @@ header {
     #logo-dda-footer {
        margin-top: 64px; }    
 
-     #inloggen {
+     .inloggen {
         display: flex;
         align-items: center;
         font-family: "Martian Mono";
@@ -366,7 +416,10 @@ header {
     text-decoration: underline; 
     text-underline-offset: 4px;
     row-gap: 8px;
-    padding: 40px 0px 40px 16px; }
+    padding: 40px 0px 40px 16px;
+    
+    a {
+        color: #222226; }}
 
 
 .footer-info {
@@ -380,7 +433,8 @@ header {
 
     a {
         text-decoration: underline; 
-        text-underline-offset: 4px; }}
+        text-underline-offset: 4px;
+        color: #222226; }}
 
     #tekst-naam-dda {
         font-weight: bold; }
@@ -392,7 +446,7 @@ header {
 
 .footer-social {
     display: grid;
-    grid-template-columns: repeat(4,60px);
+    grid-template-columns: repeat(4,70px);
     grid-template-rows: 24px 24px;
     gap: 16px;
     padding: 40px 0px 40px 16px; 
@@ -403,17 +457,18 @@ header {
     
     a {
         text-decoration: underline;
-        text-underline-offset: 4px; } }
+        text-underline-offset: 4px;
+        color: #222226; } }
 
-    #instagramfooter {
+    .instagramfooter {
         grid-row: 1;
         grid-column: 1; }
 
-    #facebookfooter {
+    .facebookfooter {
         grid-row: 1;
         grid-column: 2; }
 
-    #linkedinfooter {
+    .linkedinfooter {
         grid-row: 1;
         grid-column: 3; }
 
