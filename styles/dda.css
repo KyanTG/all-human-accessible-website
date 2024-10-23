@@ -21,14 +21,13 @@ a {
     text-decoration: none; }
 
 .link-arrow {
-
     transition: ease-out 0.3s;
 
     path {
         stroke:#222226} }
 
     .link-arrow:hover, .link-arrow:focus {
-        font-size: 18px;}
+        font-size: 18px; }
 
 .link-arrow-blauw {
 
@@ -86,17 +85,27 @@ path {
     border-top: 1px solid #222226;
     border-width: auto; }   
 
-
-
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 16px;
 
     nav {
         display: flex;
+        justify-content: space-between; }
+
+    div {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 16px }
+        gap:16px; }    
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        list-style: none;}
 
         a {
             font-family: "Martian Mono";
@@ -116,20 +125,20 @@ header {
             background: none;
             border: none; } }
 
-        @media all and (max-width: 850px)  { .linkheader, .wordlid-button {
+        @media all and (max-width: 900px)  { .linkheader, .wordlid-button, .header-left, .header-right {
             display: none; } }
 
-        @media all and (max-width: 850px)  { .headerlinkbold, .link-blauw {
+        @media all and (max-width: 900px)  { .headerlinkbold, .link-blauw {
             clip-path: circle(0); } }
             
-        @media all and (min-width: 850px) { #menubalk {
+        @media all and (min-width: 900px) { #menubalk {
             display:none; } }
 
     #logo {
         width: 53.33px;
         height: 40px; }
 
-    @media all and (min-width: 850px) {#logo {
+    @media all and (min-width: 900px) {#logo {
         width: 106.67px;
         height: 80px; } }
     
@@ -175,10 +184,10 @@ header {
     width: 100%; }
 
     #video {
-        height: 320px;
+        min-height:312px;
         width: 100%;
         object-fit: cover;
-        border: 2px solid #222226; }
+        border: 2px solid #222226; }  
 
         .video-overlay {
             position: absolute;
@@ -200,7 +209,7 @@ header {
     padding-right: 16px;
     padding-top: 16px;}
 
-    @media all and (min-width: 800px) {#text2 { 
+    @media all and (min-width: 1080px) {#text2 { 
         width: 528px; } }
 
 .informatie {
@@ -212,13 +221,7 @@ header {
     font-weight: 400;
     padding-bottom: 62px;
     padding-top: 92px; 
-    margin: 0px;} }
-
-    @media all and (min-width: 752px) {.informatie { 
-        width: 752px; } }
-
-    @media all and (min-width: 1050px) {#DDAH2, #text2 { 
-        padding-top: 48px; } }        
+    margin: 0px         ;} }      
 
         .button-leden {
             display: flex;
@@ -230,10 +233,21 @@ header {
         #text3 {
             padding-bottom: 16px;  }
 
-@media all and (min-width: 1050px) {.informatie-responsive {
-    display:flex;  
-    flex-direction: row;      } }
+@media all and (min-width: 1080px) {.informatie { 
+    width: 752px; } }
+        
+    @media all and (min-width: 1080px) {#DDAH2, #text2 { 
+        padding-top: 48px; } }              
 
+    @media all and (min-width: 1080px) {.informatie-responsive {
+        display:flex;  
+        justify-content: flex-start;
+        flex-direction: row; } }
+
+        @media all and (min-width: 1080px) {.button-leden { 
+            display:flex;  
+            justify-content: flex-start; } }
+    
 
 .logoscroller {
     display: flex;
@@ -408,6 +422,7 @@ header {
 .footer-linkjes {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     font-family: "Inter";
     font-size: 16px;
@@ -446,7 +461,7 @@ header {
 
 .footer-social {
     display: grid;
-    grid-template-columns: repeat(4,70px);
+    grid-template-columns: repeat(4,64px);
     grid-template-rows: 24px 24px;
     gap: 16px;
     padding: 40px 0px 40px 16px; 
