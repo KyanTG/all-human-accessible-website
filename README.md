@@ -1,25 +1,14 @@
-# Accessible Website
+# The Client - Website
 
-Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.
+# intro
 
-De instructie van deze leertaak staat in [INSTRUCTIONS](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/INSTRUCTIONS.md)
+Welkom! wij moeten voor DDA vacatures een hele nieuwe website ontwerpen met een nieuw huisstijl, deze opdracht is aangeleverd door Voorhoede. Ieder persoon uit ons groepje moet een pagina maken van de website, ik heb gekozen voor de pagina over ons omdat ik dit een leuke uitdaging vond waarin er veel verandert aan het uiterlijk bij verschillende devices .
 
-## Inhoudsopgave
+de link naar de pagina ( voor nu nog alleen responsive op de telefoon van 360px! ).
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+https://kyantg.github.io/the-client-website/dda.html
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+# Beschrijving
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De website heeft een duidelijke inrichting, er zitten meerdere features op zoals buttons en links, ook zit er een zogenaamde hamburger menu in verwerkt. Deze is alleen nog niet werkend maar daar word aan gewerkt! De functie van dit menu word om snel naar andere pagina's van de website te gaan.
 
-## Bronnen
-
-## Licentie
-This project is licensed under the terms of the [MIT license](./LICENSE).
