@@ -87,26 +87,32 @@ path {
 
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 16px;
+    align-items: center;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 10; 
+    padding: 16px;}
 
     nav {
-        display: flex;
-        justify-content: space-between; }
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        translate: 100% 0%;
+        transition: 0.1s; }
 
-    div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap:16px; }    
-
+    nav.toonMenu {
+        
+        translate: 0% 0%;
+        background-color: white; }
+        
     ul {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        list-style: none;}
-
+        
+        list-style: none; 
+    
         a {
             font-family: "Martian Mono";
             font-size: 12px;
@@ -118,31 +124,43 @@ header {
                 align-items: center;
                 gap: 8px;
                 color: #364BF7;
-                font-weight: bold; }
+                font-weight: bold; } }
 
-        #menubalk {
-            color: white;
-            background: none;
-            border: none; } }
+        li {
+            display: flex;
+            align-items: center; }
 
-        @media all and (max-width: 900px)  { .linkheader, .wordlid-button, .header-left, .header-right {
-            display: none; } }
+    @media all and (min-width: 900px) { 
+        
+        header > button {
+            display: none; }     
 
-        @media all and (max-width: 900px)  { .headerlinkbold, .link-blauw {
-            clip-path: circle(0); } }
-            
-        @media all and (min-width: 900px) { #menubalk {
-            display:none; } }
+        nav {
+            display: flex;
+            align-items: center;
+            position: static;
+            translate: unset;
+            padding: 0; }
 
-    #logo {
-        width: 53.33px;
-        height: 40px; }
+        nav button {
+            display: none; }
 
-    @media all and (min-width: 900px) {#logo {
-        width: 106.67px;
-        height: 80px; } }
+        nav ul {
+            display: flex;
+            gap:8px; }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            border: none;  } }
     
-    
+ 
+#hamburgersvg {
+    color: white;
+    background: none;
+    border: none;}
+
 .terug-home {
     display: flex;
     align-items: center;
@@ -152,7 +170,7 @@ header {
     font-size: 14px;
     gap: 8px;
     color: black;
-    margin-top: 64px; }
+    margin-top: 192px; }
 
 .over-ons {
     display: flex;
@@ -175,6 +193,11 @@ header {
             margin-right: 16px;} }   
 
 
+    @media all and (min-width: 900px) { #over-onsh1 { 
+        
+     font-size: 96px;} }
+
+
 .video-button {
     display: flex;
     justify-content: center;
@@ -185,9 +208,13 @@ header {
 
     #video {
         min-height:312px;
-        width: 100%;
+        width:100%;
         object-fit: cover;
         border: 2px solid #222226; }  
+
+        @media all and (min-width: 900px) { #video {
+            margin-left: 48px;
+            margin-right: 48px; }}
 
         .video-overlay {
             position: absolute;
@@ -255,8 +282,8 @@ header {
     overflow: hidden;
 
     img {
-        width: 120px;
-        height: 120px; } }
+        min-width: 120px;
+        min-height: 120px; } }
 
 .logoscroller2 {
     display: flex;
@@ -264,8 +291,8 @@ header {
     overflow: hidden;
 
     img {
-        width: 120px;
-        height: 120px; } }
+        min-width: 120px;
+        min-height: 120px; } }
 
 
 .ons-team {

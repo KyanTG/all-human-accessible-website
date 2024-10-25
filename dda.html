@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/dda.css">
+    <script defer src="dda.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,23 +25,30 @@
 
 <body>
  <header>
-  
-
   <img id="logo" src="content/dda-logo-white.svg" alt="logo dda">
+
+  <button id="hamburgersvg">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.5" y="0.5" width="39" height="39" stroke="#222226"/>
+      <mask id="mask0_5_18742" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="32" height="32">
+      <rect x="4" y="4" width="32" height="32" fill="#D9D9D9"/>
+      </mask>
+      <g mask="url(#mask0_5_18742)">
+      <path d="M8 28V25.3333H32V28H8ZM8 21.3333V18.6667H32V21.3333H8ZM8 14.6667V12H32V14.6667H8Z" fill="#222226"/></g>
+    </svg></button>
     
   <!-- navigatiebalk -->
 
     <nav>
+
+      <button><img src="content/hamburger.svg" alt="sluit"></button>
+
       <ul>
-       <div class="header-left"> 
         <li><a class="headerlinkbold" href="#">over ons</a></li>
         <li><a class="linkheader" href="#">events</a></li>
         <li><a class="linkheader"  href="#">publicaties</a></li>
         <li><a class="linkheader"  href="#">leden</a></li>
         <li><a class="linkheader"  href="#">vacatures</a></li>
-       </div>
-
-       <div class="header-right">
         <li><a class="link-blauw link-arrow-blauw" href="#">inloggen          
 
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,20 +61,8 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path  d="M8 3L13.0001 8.0001L8 13.0002" stroke-width="1.5" stroke-miterlimit="4.62023"/>
               <path  d="M3 8L13 8"  stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-            </svg></a>
-         </li>
-       </div>
+            </svg></a></li>
      </ul>
-
-        <button aria-label="open menu" id="menubalk"> 
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="39" height="39" stroke="#222226"/>
-            <mask id="mask0_5_18742" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="32" height="32">
-            <rect x="4" y="4" width="32" height="32" fill="#D9D9D9"/>
-            </mask>
-            <g mask="url(#mask0_5_18742)">
-            <path d="M8 28V25.3333H32V28H8ZM8 21.3333V18.6667H32V21.3333H8ZM8 14.6667V12H32V14.6667H8Z" fill="#222226"/></g>
-          </svg></button>
     </nav>
  </header>
 
@@ -80,7 +76,7 @@
         <path d="M8 13L2.9999 7.9999L8 2.99979" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023"/>
         <path d="M13 8L3 8" stroke="#000000" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
         </svg>Terug naar home</a>
-         <h1>Over ons</h1>
+         <h1 id="over-onsh1">Over ons</h1>
           <p>Dutch Digital Agencies (DDA) verenigt en vertegenwoordigt de [nummer] beste digitale bureaus van Nederland. 
              Samen maken we de wereld om ons heen steeds een beetje slimmer. Stap voor stap, klik na klik.</p>
     </div>
