@@ -93,7 +93,7 @@ header {
     top:0;
     background-color: white;
     z-index: 10; 
-    padding: 16px;}
+    padding: 16px;
 
     nav {
         position: fixed;
@@ -101,8 +101,8 @@ header {
         right: 0;
         top: 0;
         bottom: 0;
-        translate: 100% 0%;
-        transition: 0.1s; }
+        translate: 100%;
+        transition: 0.1s; } }
 
     nav.toonMenu {
         
@@ -135,7 +135,7 @@ header {
         header > button {
             display: none; }     
 
-        nav {
+        header > nav {
             display: flex;
             align-items: center;
             position: static;
