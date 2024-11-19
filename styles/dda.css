@@ -4,13 +4,61 @@ html {
     * {
         box-sizing: border-box; } }
 
+/* custom properties */
+
+
 body {
-    font-family:"Archivo", Arial, Helvetica, sans-serif; 
-    margin: 0px;}
+
+    /* kleur */
+
+    --standard-color: #222226;
+    --second-standard-color: white;
+    --third-standard-color: #666666;
+    --changeable-color: #364BF7;
+    
+    /* font */
+    
+    --main-font: "Archivo";
+    --secondary-font: "Martian Mono";
+    
+    /* font size headings */
+        
+    --font-size-xxl: 96px;
+    --font-size-xl: 64px;
+    --font-size-l: 48px;
+    --font-size-m: 32px;
+    --font-size-s: 24px;
+    --font-size-xs: 24px;
+    /* font-size-extra */
+
+    --font-size-paragraph: 18px;
+    --font-size-subtext: 16px;
+
+    /* line-height */
+
+    --line-height-xxl: 96px;
+    --line-height-xl: 64px;
+    --line-height-l: 48px;
+    --line-height-m: 40px;
+    --line-height-s: 40px;
+    --line-height-xs: 40px;
+
+    /* letter-spacing */
+    
+    --letter-spacing-main: -4%;
+    --letter-spacing-secondary: 0%;
+    
+    /* font-weight */
+    --standard-font-weight: 400;
+    --semibold-font-weight: 500;
+    --bold-font-weight: 600; }
    
-h3, p, a {
+body, h3, p, a {
     margin: 0; }  
 
+h1, h2, h3, h4, h5, p {
+    font-family: var(--main-font) ;
+}
 h2 {
     line-height: 32px; }
 
@@ -68,7 +116,7 @@ path {
         font-size: 12px;
         font-weight: 700; 
         padding: 14px 16px 14px 16px;
-        font-family: "Martian Mono";
+        font-family: var(--secondary-font);
         text-transform: uppercase;
         gap: 12px;
         box-shadow: inset 0 0 0 0 white;
@@ -114,7 +162,7 @@ header {
         list-style: none; 
     
         a {
-            font-family: "Martian Mono";
+            font-family: var(--secondary-font);
             font-size: 12px;
             text-transform: uppercase;
             color: black; }
@@ -228,7 +276,7 @@ header {
 
 
 #text2 {
-    font-family: "Martian Mono" ;
+    font-family: var(--secondary-font) ;
     font-size: 14px;
     letter-spacing: -4%;
     text-transform: uppercase;
@@ -310,7 +358,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: "Martian Mono" ;
+        font-family: var(--secondary-font) ;
         font-size: 12px;
         text-transform: uppercase;
         border: solid 1px;
@@ -348,14 +396,13 @@ header {
             height: 272px} }
         
         .naam-medewerker {
-            font-family:"Archivo";
             font-size: 24px;
             font-weight: 400;
             padding-top: 24px;
             width: 272px; }     
 
         .infopersoon {
-            font-family: "Martian Mono";
+            font-family: var(--secondary-font);
             text-transform: uppercase;
             font-size: 14px;
             padding-top: 16px; 
@@ -369,7 +416,7 @@ header {
 
             .links-personen {
                 display: flex;
-                font-family: "Martian Mono";
+                font-family: var(--secondary-font);
                 font-weight: bold;
                 font-size: 14px;
                 text-transform: uppercase;
@@ -383,7 +430,6 @@ header {
         width: 100%;
     
         h3 {
-          font-family: "Archivo";
           font-size: 24px;
           font-weight: 500;
           margin-left: 16px;
